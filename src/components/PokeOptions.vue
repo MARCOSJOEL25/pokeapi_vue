@@ -1,20 +1,21 @@
 <template>
-    <div class="options-container ">
+    <div class="options-container" >
         <ul>
-            <li>Option 1</li>
-            <li>Option 2</li>
-            <li>Option 3</li>
-            <li>Option 4</li>
+            <li v-for="(option, index) in options" :key="index" @click="$emit('selection', option.id)">{{ option.name }}</li>
         </ul>
     </div>
 </template>
 
 <script>
     export default {
-        
+        props:{
+            options:{
+                required:true,
+            }
+        }
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

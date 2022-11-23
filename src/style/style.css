@@ -57,6 +57,13 @@ img {
     filter: brightness(0);
 }
 
+.options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* Pokemon Options */
 ul {
     list-style-type: none;
@@ -74,7 +81,23 @@ li:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.options-container {
-    display: flex;
-    justify-content: center;
+.pokemon_container_menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button{
+  border: none;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: #ffd;
+  color: #000;
+  transition: .5s;
 }
